@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script src="/static/js/back.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+$("#back").click(function(){
+	dui();
+});
+});
+</script>
+<table>
+<tr>
+<th>id</th><th>irum</th><th>juso</th><th>nai</th>
+</tr>
+{% for a in friendslist %}
+<tr>
+<td>{{a.id}}</td><td>{{a.irum}}</td><td>{{a.juso}}</td><td>{{a.nai}}</td>
+
+{% endfor %}
+</tr>
+</table>
+
+<input type="button" id="back" value="홈으로">
+</body>
+</html>

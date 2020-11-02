@@ -1,0 +1,3 @@
+function dui(){
+	history.back()
+	}
